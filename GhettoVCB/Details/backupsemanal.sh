@@ -1,0 +1,1 @@
+0    20   *   *   6   /vmfs/volumes/datastore1/<directory>/ghettoVCB.sh -f /vmfs/volumes/datastore1/<directory>/<archive-with-vm-names.txt> -l /vmfs/volumes/datastore1/<directory>/<directory_logs>/ghettoVCB$(date +\%s).log
