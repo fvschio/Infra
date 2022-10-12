@@ -1,0 +1,14 @@
+groupadd <grp+nome_grupo>
+
+useradd <nome_usuário>
+
+usermod -a -G <nome_grupo> <nome_usuário>
+
+chrgrp <grupo> <pasta>
+
+Pasta em /home/ e /samba/19bimtz/
+
+chown -R <root>.<nome_grupo> <pasta_do_setor>/
+
+smbpasswd -a <nome_usuário>
+
