@@ -1,0 +1,19 @@
+Instalação do VMWare Tools no Linux
+
+1. Dentro da console acesse a VM desejada.
+2. Verifique se a VM está desligada, caso não, realize o desligamento da mesma.
+3. Edite a VM e adicione a iso do VMWareTools para Linux. (Verifique se a checkbox do connect está marcada).
+3.1 Para download da iso do VMWare Tools, acesse https://www.vmware.com/br/download.html, identifique a versão mais atual para o download.
+3.2 Realize a transferência da iso através da console, acessando o datastore1 e fazendo o upload da mesma.
+4. Após adicionar a iso inicie a VM.
+5. Dentro da VM, realize a montagem do disco. Ex: mount /dev/sr0 /mnt
+6. Realize a cópia do conteúdo do disco para /tmp. Ex: cp -a VmwareTools-10.2.5-8068406.tar.gz  /tmp
+7. Realize a descompactação do arquivo zipado. Ex: tar -xzvf  VmwareTools-10.2.5-8068406.tar.gz
+7. Acesse a pasta vmware-tools-distrib e adicione a permissão de execução ao instalador. Ex: chmod +x vmware-install.pl
+8. Execute o instalador. Ex: ./vmware-install.pl
+9. Verifique as opções, na dúvida siga o default.
+10. Verifique no final da instalação se o mesmo foi concluído com sucesso.
+Exemplo de mensagem de instalação com sucesso:
+
+The configuration of VMware Tools 10.2.5 build-8068406 for Linux for this
+running kernel completed successfully.
