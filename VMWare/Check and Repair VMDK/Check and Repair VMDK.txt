@@ -1,0 +1,5 @@
+vmkfstools -x check <CAMINHO COMPLETO DO .VMDK>
+vmkfstools -x repair <CAMINHO COMPLETO DO .VMDK>
+
+EX:
+vmkfstools -x repair /vmfs/volumes/datastore1/webserver/webserver.vmdk
